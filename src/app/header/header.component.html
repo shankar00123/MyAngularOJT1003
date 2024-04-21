@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/home">Employee Workforce</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav ms-auto">
+                    <span class="nav-item nav-link" style="font-weight: bold; color: rgb(107, 85, 85)">Hi Welcome {{
+                        username }}
+                    </span>&nbsp;
+                    <a (click)="onLogout()" style="cursor: pointer; font-weight: bold; color: rgb(107, 85, 85)"
+                        class="nav-item nav-link">LogOut
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,17 @@
+.myclass{
+    text-align: center;
+}
+
+.main-div{
+    background: antiquewhite none repeat scroll 0 0;
+    margin: 10rem auto 30px;
+    padding: 50px 70px 70px 71px;
+    border-radius: 15px;
+}
+
+.panel{ 
+    border:0; 
+    border-radius: 0;
+    box-shadow:none; 
+    margin-bottom:0;
+    }

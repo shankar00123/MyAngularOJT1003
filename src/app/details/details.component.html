@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <app-header></app-header>
+</div>
+<h4> {{employeeIdFetchedFromUrl}} </h4>
+<br>
+<div class="container">
+    <h1 class="mt-5 mb-4">Employee Cards</h1>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Repeat this card div for each employee -->
+      <div class="col">
+        <div class="card h-100 employee-card">
+          <img src="" class="card-img-top" alt="Employee Image">
+          <div class="card-body">
+            <h5 class="card-title">Employee Name :{{employeeObjById.name}}</h5>
+            <p class="card-text">Employee Status: {{employeeObjById.status}} </p>
+            <p class="card-text">Department: {{employeeObjById.department}} </p>
+            <p class="card-text">Created By: {{employeeObjById.createdBy}} </p>
+            <p class="card-text">Created Date: {{employeeObjById.createdDate |date}} </p>
+            <p class="card-text">Updated By: {{employeeObjById.updatedBy}} </p>
+            <p class="card-text">Updated Date: {{employeeObjById.updatedDate |date:"dd/MM/yyyy"}} </p>
+            <p class="card-text">Email Id: {{employeeObjById.emailId}} </p>
+            <p class="card-text">Mobile No: {{employeeObjById.mobileNo}} </p>
+            <p class="card-text">Country Name: {{employeeObjById.country.cname}} </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Joined on: January 1, 2023</small>
+          </div>
+        </div>
+      </div>
